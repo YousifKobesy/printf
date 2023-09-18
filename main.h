@@ -24,24 +24,24 @@
 #define FMT_PREC_EMPTY(fmt_inf) (fmt_inf->is_precision_set && !fmt_inf->prec)
 
 /**
- * struct format_info - Contains information about the options
- * \ and flags appearing in an instance of the conversion specifier
- * @prec: The specified precision
- * @width: The length of the formatted data
- * @spec: The specified conversion specifier character
- * @is_long_double: Specifies the presence of the 'L' length modifier
- * @is_long_long: Specifies the presence of the 'll' length modifier
- * @is_long: Specifies the presence of the 'l' length modifier
- * @is_short: Specifies the presence of the 'h' length modifier
- * @is_char: Specifies the presence of the 'hh' length modifier
- * @is_precision_set: Specifies the presence of a precision value
- * @is_width_set: Specifies the presence of a width value
- * @alt: Specifies the presence of the '#' flag
- * @space: Specifies the presence of the ' ' (invisible plus sign) flag
- * @left: Specifies the presence of the '-' (left-align) flag
- * @show_sign: Specifies the presence of the '+' flag
- * @group: The current locale's digit separator for integers
- * @pad: This is the character to use for padding the output
+ * struct format_info - Contains information about the options for formatting.
+ * \ and flags appearing in an instance of the conversion specifier are.
+ * @prec: The specified precision for the conversion specifier.
+ * @width: The length of the formatted data in the specified precision.
+ * @spec: The specified conversion specifier character string.
+ * @is_long_double: Specifies the presence of the 'L' length modifier and .
+ * @is_long_long: Specifies the presence of the 'll' length modifier and it.
+ * @is_long: Specifies the presence of the 'l' length modifier and i.
+ * @is_short: Specifies the presence of the 'h' length modifier and h.
+ * @is_char: Specifies the presence of the 'hh' length modifier and hh.
+ * @is_precision_set: Specifies the presence of a precision value and t.
+ * @is_width_set: Specifies the presence of a width value gi.
+ * @alt: Specifies the presence of the '#' flag indicating.
+ * @space: Specifies the presence of the ' ' (invisible plus sign) flag and.
+ * @left: Specifies the presence of the '-' (left-align) flag and.
+ * @show_sign: Specifies the presence of the '+' flag indicating.
+ * @group: The current locale's digit separator for integers are.
+ * @pad: This is the character to use for padding the output ss.
  */
 struct format_info
 {
@@ -65,9 +65,9 @@ struct format_info
 typedef struct format_info fmt_info_t;
 /**
  * struct spec_printer - Represents a function that prints an argument
- * \ based on a determined format
- * @spec: The conversion specifier
- * @print_arg: The pointer to the printing function
+ * \ based on.
+ * @spec: The conversion specifier to print.
+ * @print_arg: The pointer to the .
  */
 struct spec_printer
 {
@@ -79,10 +79,10 @@ typedef unsigned char uchar_t;
 typedef unsigned short ushort_t;
 
 /**
- * struct float_info - Represents the IEE754 specification of a float
- * @sign: The sign of the float
- * @exponent: The exponent of the float
- * @mantissa: The mantissa of the float
+ * struct float_info - Represents the IEE754 .
+ * @sign: The sign of the float and.
+ * @exponent: The exponent of the float or.
+ * @mantissa: The mantissa of the float anf.
  */
 struct float_info
 {
